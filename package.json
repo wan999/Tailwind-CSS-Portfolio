@@ -1,0 +1,21 @@
+{
+  "name": "css-tailwind-test",
+  "version": "1.0.0",
+  "description": "Rebuild",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "author": "Stevie Cavanagh",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "lite-server": "^2.6.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "localtunnel": "^2.0.2"
+  }
+}
