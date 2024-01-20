@@ -42,7 +42,7 @@
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-mid hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
             <!--
@@ -82,9 +82,9 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
-        <a href="index.html" class="text-blue-light block rounded-md px-3 py-2 text-base font-medium">Home</a>
-        <a href="about.html" class="text-black hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">About</a>
+       <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
+        <a href="index.html" class="text-black block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="about.html" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
         <a href="#contact-info-details" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium">Get In Touch</a>
       </div>
     </div>
