@@ -18,12 +18,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/lazyload.min.js"></script>
+    <!-- Font Awesome Icon Library -->
+    <script src="https://kit.fontawesome.com/8848d2d9d9.js" crossorigin="anonymous"></script>
      <title>Freelance Graphic Design | Liverpool, Merseyside - UK</title>
     <style>
 
     </style>
 </head>
 <body class="font-sans">
+  <div class="loader w-screen h-screen grid place-content-center justify-center">
+    <div class="text-5xl">
+      <i class="fa-solid fa-circle-notch fa-spin text-blue-light"></i>
+    </div>
+  </div>
   <nav class="bg-white border border-gray-700 sticky">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -116,6 +123,7 @@
           <a class="footer-link opacity-100 hover:opacity-50 z-10" href="https://dribbble.com/s-cavanagh"><img src="./img/dribbble.svg" alt="Dribbble Social Media Logo" width="25" height="25"></a>
         </div>
     </footer>
+    <script src="./js/loader.js"></script>
     <script src="./js/image-lazyload.js"></script>
     <script src="./js/navbar-toggle.js"></script>
 </body>

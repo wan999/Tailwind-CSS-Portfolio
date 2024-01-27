@@ -37,6 +37,11 @@
     </style>
 </head>
 <body class="font-sans">
+  <div class="loader w-screen h-screen grid place-content-center justify-center">
+    <div class="text-5xl">
+      <i class="fa-solid fa-circle-notch fa-spin text-blue-light"></i>
+    </div>
+  </div>
   <nav class="bg-white border border-gray-700">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
@@ -194,7 +199,7 @@
     </footer>
     <script>
 
-       /* Client Images */
+    /* Client Images */
     $(window).scroll( function(){ 
       var collectionofclients = $(".clients img");
       var bottom_of_object = $(".clients").position().top;
@@ -208,6 +213,7 @@
     });
 
     </script> 
+    <script src="./js/loader.js"></script>
     <script src="./js/navbar-toggle.js"></script>
 </body>
 </html>
