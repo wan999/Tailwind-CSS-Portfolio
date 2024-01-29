@@ -20,7 +20,7 @@ $(window).on('load', function() {
 
   });  
 
-  $( "#ux").click(function() {
+  $( "#digital").click(function() {
     $('.iso-grid').isotope({ filter: '.ux' });
       
 
