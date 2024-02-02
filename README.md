@@ -1,1 +1,3 @@
-Portfolio Rebuilt using Tailwind CSS
+Portfolio Rebuilt using Tailwind CSS with Feather Icons
+
+Design Portfolio 
