@@ -22,6 +22,47 @@
     <script src="https://kit.fontawesome.com/8848d2d9d9.js" crossorigin="anonymous"></script>
     <title>Freelance Graphic Design | Liverpool, Merseyside - UK</title>
     <style>
+
+      .cls-1 {
+        opacity: .25;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #397dff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+    @media (prefers-color-scheme: dark) {
+
+      .cls-1, .cls-2 {
+          fill: none;
+          stroke: #fff !important;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+      }
+
+      .custom-shape-divider-bottom-1668174239 {
+        background-color: #2A3247 !important;
+      }
+
+      .badge img {
+        filter: brightness(700%) grayscale(100%);
+      }
+
+        .custom-shape-divider-bottom-1668174239 .shape-fill {
+          fill: #242433 !important;
+      }
+
+      .bg-blue-thumbnail {
+        background-color: #1a63b5;
+      }
+
+    }
+
     .custom-shape-divider-bottom-1668174239 {
         width: 100%;
         overflow: hidden;
@@ -29,6 +70,7 @@
         height: 100px;
         background-color: white;
     }
+
     .custom-shape-divider-bottom-1668174239 svg {
         position: relative;
         display: block;
@@ -39,6 +81,8 @@
     .custom-shape-divider-bottom-1668174239 .shape-fill {
         fill: #3A7DFF;
     }
+
+
     .badge {
       top: -150px;
       left: -150px;
@@ -84,19 +128,24 @@
 
     </style>
 </head>
-<body class="font-sans">
-  <div class="loader w-screen h-screen grid place-content-center justify-center">
+<body class="font-sans dark:bg-slate-light">
+  <div class="loader w-screen h-screen grid place-content-center justify-center bg-white dark:bg-slate-light">
     <div class="text-5xl">
       <!-- <i class="fa-solid fa-circle-notch fa-spin text-blue-light"></i> -->
-      <img class="animate-spin spin" src="./img/loader-blue.svg" alt="Loader Image" width="50" height="50">
+      <div class="animate-spin spin" style="width: 50px; height: 50px;">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <circle class="cls-1" cx="15" cy="15" r="10.5"/>
+            <path class="cls-2" d="M15,4.5c2.9,0,5.52,1.18,7.42,3.08s3.08,4.53,3.08,7.42-1.18,5.52-3.08,7.42-4.53,3.08-7.42,3.08-5.52-1.18-7.42-3.08-3.08-4.53-3.08-7.42,1.18-5.52,3.08-7.42"/>
+          </svg>
+      </div>
     </div>
   </div>
-  <nav class="bg-white border border-gray-700 sticky">
+  <nav class="bg-white dark:bg-slate-light border border-gray-700 dark:border-gray-600 sticky">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-mid hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black dark:text-white dark:hover:text-teal hover:bg-gray-mid dark:hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
             <!--
@@ -119,14 +168,14 @@
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-1 items-center">
-            <a href="index.html" class="text-xl font-extrabold text-blue-light hover:text-gray-mid" aria-current="page">SC</a>
+            <a href="index.html" class="text-xl font-extrabold text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-white" aria-current="page">SC</a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "text-blue-light hover:text-gray-mid hover:text-gray-mid" -->
-              <a href="index.html" class="text-black px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-              <a href="about.html" class="text-blue-light hover:text-gray-mid px-3 py-2 text-sm font-medium">About</a>
-              <a href="mailto:stevie@sc-design.uk" class="text-blue-light hover:text-white hover:border-white hover:bg-gray-mid border border-blue-light rounded-md px-3 py-2 text-sm font-medium">Get In Touch</a>
+              <a href="index.html" class="text-black dark:text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+              <a href="about.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 px-3 py-2 text-sm font-medium">About</a>
+              <a href="mailto:stevie@sc-design.uk" class="text-blue-light dark:text-teal dark:border-teal hover:text-white dark:hover:border-teal dark:hover:text-white hover:border-white hover:bg-gray-mid dark:hover:bg-teal border border-blue-light rounded-md px-3 py-2 text-sm font-medium transition">Get In Touch</a>
             </div>
           </div>
         </div>
@@ -137,21 +186,21 @@
     <div class="hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
        <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
-        <a href="index.html" class="text-black block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-        <a href="about.html" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
-        <a href="#contact-info-details" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium">Get In Touch</a>
+        <a href="index.html" class="text-black text-black dark:text-white block rounded-md px-3 py-2 text-base font-medium text-sm" aria-current="page">Home</a>
+        <a href="about.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 block rounded-md text-base px-3 py-2 text-sm font-medium">About</a>
+        <a href="#contact-info-details" class="text-blue-light dark:text-teal dark:hover:text-white dark:hover:border-teal hover:bg-gray-mid dark:hover:bg-teal dark:border-teal hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium transition">Get In Touch</a>
       </div>
     </div>
   </nav>  
       
-    <section class="hero w-full flex justify-center">
+    <section class="hero bg-white dark:bg-slate-light w-full flex justify-center">
         <div class= "md:max-w-screen-lg w-full mt-48 mb-24 md:mt-60 md:mb-36 relative px-5">
             <div class="badge animate-spin-slow spin-slow absolute rounded-full">
               <img src="./img/badge.png" alt="Badge: Illustration, Graphic Design, Web Development" height="150" width="150"/>
             </div>
-            <div class="text-4xl md:text-7xl font-bold text-blue-light">Hello, I'm Stevie.<br>A graphic designer working from Liverpool in the UK.</div>
-            <div class="md:w-[40rem] w-full text-lg text-gray-mid my-6">With experience in Branding, Illustration, Editorial and UX / UI Design. I help businesses to connect with their audience through design and creativity. I'm available for independent projects and collaborations. Let’s chat.</div>
-            <a href="mailto:stevie@sc-design.uk" class="border border-blue-light hover:border-white text-blue-light hover:bg-gray-mid hover:text-white text-xl font-light px-6 py-3 rounded">Get In Touch</a>
+            <div class="text-4xl md:text-7xl font-bold text-blue-light dark:text-teal">Hello, I'm Stevie.<br>A graphic designer working from Liverpool in the UK.</div>
+            <div class="md:w-[40rem] w-full text-lg text-gray-600 my-6 dark:text-gray-100">With experience in Front-end Development, Branding, Illustration, Publication and UX / UI Design. I help businesses to connect with their audience through design and creativity. I'm available for independent projects and collaborations. Let’s chat.</div>
+            <a href="mailto:stevie@sc-design.uk" class="border border-blue-light hover:border-white dark:hover:border-teal text-blue-light dark:text-teal dark:border-teal hover:bg-gray-mid dark:hover:bg-teal hover:text-white dark:hover:text-white text-xl font-light px-6 py-3 rounded transition">Get In Touch</a>
         </div>
     </section>
 
@@ -161,56 +210,48 @@
       </svg>
     </div>
     
-    <section class="portfolio w-full flex-initial justify-center bg-blue-light text-white p-5">
+    <section class="portfolio w-full flex-initial justify-center bg-blue-light dark:bg-slate-dark text-white p-5">
         <div class="text-center">
             <div class="text-5xl font-bold p-6">Latest Works</div>
             <div class="max-w-screen-xl mx-auto">
                 <ul class="projects-filter max-w-screen-sm grid grid-cols-2 sm:grid-cols-4 sm:gap-4 gap-1 text-center p-5 mx-auto">
-                    <li id="all" class="border border-white hover:bg-gray-mid hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded">All</li>
-                    <li id="digital" class="border border-white hover:bg-gray-mid hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded">Digital</li>
-                    <li id="logo" class="border border-white hover:bg-gray-mid hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded">Logo</li>
-                    <li id="print" class="border border-white hover:bg-gray-mid hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded">Print</li>
+                    <li id="all" class="border border-white hover:bg-gray-mid dark:hover:bg-teal dark:hover:border-teal hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded transition">All</li>
+                    <li id="digital" class="border border-white hover:bg-gray-mid dark:hover:bg-teal dark:hover:border-teal hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded transition">Digital</li>
+                    <li id="logo" class="border border-white hover:bg-gray-mid dark:hover:bg-teal dark:hover:border-teal hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded transition">Logo</li>
+                    <li id="print" class="border border-white hover:bg-gray-mid dark:hover:bg-teal dark:hover:border-teal hover:border-gray-mid hover:text-white font-light px-5 py-2 rounded transition">Print</li>
                 </ul>
 
                 <div class="iso-grid w-full">
                   <div class="grid-sizer"></div>
                   <div class="gutter-sizer"></div>
 
+                  <a href="./itot.html" class="project relative ux">
+                    <img class="z-0" src="./img/thumbnails/13.jpg" alt="Project Thumbnail: ITOT - Integrated Theatre Of Things" height="auto" width="100%"/>
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
+                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Integrated Theatre Of Things</div>
+                      <p style="position: relative; top: calc(50% - 1rem); left: 0;">Digital</p>
+                    </div>
+                  </a>
+
                   <a href="./steph-peckham.html" class="project relative logo">
                       <img class="z-0" src="./img/thumbnails/1.jpg" alt="Project Thumbnail: Steph Peckham" height="auto" width="100%"/>
-                      <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                      <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                         <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Steph Peckham</div>
                         <p style="position: relative; top: calc(50% - 1rem); left: 0;">Logo Design</p>
                       </div>
                   </a>
 
-                  <a href="./makefest.html" class="project relative print">
-                    <img class="z-0" src="./img/thumbnails/2.jpg" alt="Project Thumbnail: Makefest" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Makefest</div>
-                      <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
-                    </div>
-                  </a>
-
-                  <a href="./lady-lever.html" class="project relative ux">
-                    <img class="z-0" src="./img/thumbnails/3.jpg" alt="Project Thumbnail: Lady Lever" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Lady Lever</div>
-                      <p style="position: relative; top: calc(50% - 1rem); left: 0;">Digital</p>
-                    </div>
-                  </a>
-
-                  <a href="./grow-a-group.html" class="project relative ux">
-                    <img class="z-0" src="./img/thumbnails/4.jpg" alt="Project Thumbnail: Grow-a-group" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Grow-a-group</div>
+                  <a href="./itot-presentation.html" class="project relative ux">
+                    <img class="z-0" src="./img/thumbnails/14.jpg" alt="Project Thumbnail: ITOT Presentation" height="auto" width="100%"/>
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
+                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">ITOT Presentation</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Digital</p>
                     </div>
                   </a>
 
                   <a href="./jones-av.html" class="project relative print">
                     <img class="z-0" src="./img/thumbnails/5.jpg" alt="Project Thumbnail: Jones AV" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                       <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Jones AV</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
                     </div>
@@ -218,23 +259,23 @@
 
                   <a href="./fact-liverpool.html" class="project relative print">
                     <img class="z-0" src="./img/thumbnails/6.jpg" alt="Project Thumbnail: FACT Liverpool" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                       <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">FACT Liverpool</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
                     </div>
                   </a>
 
-                  <a href="./canddi.html" class="project relative ux">
-                    <img class="z-0" src="./img/thumbnails/7.jpg" alt="Project Thumbnail: CANDDi" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">CANDDi</div>
+                  <a href="./surgical-events.html" class="project relative ux">
+                    <img class="z-0" src="./img/thumbnails/15.jpg" alt="Project Thumbnail: Surgical Events" height="auto" width="100%"/>
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
+                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Surgical Events</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Digital</p>
                     </div>
                   </a>
 
                   <a href="./presentation.html" class="project relative ux">
                     <img class="z-0" src="./img/thumbnails/8.jpg" alt="Project Thumbnail: Presentation" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                       <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Presentation</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Digital</p>
                     </div>
@@ -242,31 +283,15 @@
 
                   <a href="./beauty.html" class="project relative logo">
                     <img class="z-0" src="./img/thumbnails/9.jpg" alt="Project Thumbnail: Beauty" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                       <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Beauty</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Logo Design</p>
                     </div>
                   </a>
 
-                  <a href="./park-road.html" class="project relative print">
-                    <img class="z-0" src="./img/thumbnails/10.jpg" alt="Project Thumbnail: Park Road" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Park Road</div>
-                      <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
-                    </div>
-                  </a>
-
-                  <a href="./blood-brothers.html" class="project relative print">
-                    <img class="z-0" src="./img/thumbnails/11.jpg" alt="Project Thumbnail: Blood Brothers" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
-                      <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Blood Brothers</div>
-                      <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
-                    </div>
-                  </a>
-
                   <a href="./illustration.html" class="project relative print">
                     <img class="z-0" src="./img/thumbnails/12.jpg" alt="Project Thumbnail: Illustration" height="auto" width="100%"/>
-                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90">
+                    <div class="overlay bg-blue-thumbnail h-full w-full z-10 top-0 absolute opacity-0 hover:opacity-90 transition">
                       <div class="text-xl" style="position: relative; top: calc(50% - 1.25rem); left: 0;">Illustration</div>
                       <p style="position: relative; top: calc(50% - 1rem); left: 0;">Print</p>
                     </div>
@@ -277,7 +302,7 @@
         </div>
     </section>
 
-    <section id="contact-info-details" class="contact-info w-full flex justify-center bg-gray-mid text-white py-5">
+    <section id="contact-info-details" class="contact-info w-full flex justify-center bg-gray-mid dark:bg-dm-gray text-white py-5">
       <div class="max-w-screen-lg md:flex">
           <div class="info text-lg w-full flex-shrink md:w-9/12 p-10">
               <p>Having gained considerable experience both in-house and as a freelancer, I have worked as a designer on a host of projects with clients using different skill sets over the years. I'm available for freelance projects and collaborations - email me for a chat.</p>
@@ -297,7 +322,7 @@
           </div>
         </div>
     </section>
-    <footer class="bg-gray-dark w-full flex p-10">
+    <footer class="bg-gray-dark dark:bg-black w-full flex p-10">
         <div class="flex-1 text-white copyright">© Stevie Cavanagh Design</div>
         <div class="social-media grid grid-cols-2 gap-3 content-center">
           <a class="footer-link opacity-100 hover:opacity-50 z-10" href="https://www.linkedin.com/in/stevie-cavanagh"><img src="./img/linkedin.svg" alt="Linkedin Social Media Logo" width="25" height="25"></a>

@@ -21,19 +21,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.sc-design.uk/makefest</loc>
-        <lastmod>2023-11-05</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.sc-design.uk/lady-lever</loc>
-        <lastmod>2023-11-05</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.sc-design.uk/grow-a-group</loc>
+        <loc>https://www.sc-design.uk/itot</loc>
         <lastmod>2023-11-05</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
@@ -51,37 +39,31 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.sc-design.uk/canddi</loc>
+        <loc>https://www.sc-design.uk/presentation</loc>
         <lastmod>2023-11-05</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.sc-design.uk/russell</loc>
-        <lastmod>2023-11-05</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.sc-design.uk/blucom6</loc>
-        <lastmod>2023-11-05</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.sc-design.uk/beauty-by-catherine</loc>
-        <lastmod>2023-11-05</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.sc-design.uk/park-road</loc>
+        <loc>https://www.sc-design.uk/beauty</loc>
         <lastmod>2023-11-05</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.sc-design.uk/illustration</loc>
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.sc-design.uk/itot-presentation</loc>
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.sc-design.uk/surgical-events</loc>
         <lastmod>2023-11-05</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

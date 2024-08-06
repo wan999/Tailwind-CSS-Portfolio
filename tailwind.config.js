@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
+      gray: colors.gray,
+      'teal': '#85BEFF',
+      'slate-light': '#2A3247',
+      'slate-mid': '#242B40',
+      'slate-dark': '#242433',
+      'dm-gray': '#1D1D21',
       'blue-light': '#3A7DFF',
       'blue-mid': '#2B37A5',
       'blue-dark': '#212C8E',
@@ -10,7 +19,7 @@ module.exports = {
       'gray-light': '#969696',
       'gray-mid': '#474646',
       'gray-dark': '#353535',
-      'black': '#0000000',
+      'black': 'black',
       "white": 'white',
     },
     fontFamily: {

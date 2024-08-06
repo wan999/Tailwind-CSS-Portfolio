@@ -24,21 +24,49 @@
      <title>Freelance Graphic Design | Liverpool, Merseyside - UK</title>
     <style>
 
+    .cls-1 {
+        opacity: .25;
+      }
+
+    .cls-1, .cls-2 {
+      fill: none;
+      stroke: #397dff;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      .cls-1, .cls-2 {
+          fill: none;
+          stroke: #fff !important;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+      }
+    }
+      
     </style>
 </head>
-<body class="font-sans">
-  <div class="loader w-screen h-screen grid place-content-center justify-center">
+<body class="font-sans dark:bg-slate-light">
+  <div class="loader w-screen h-screen grid place-content-center justify-center bg-white dark:bg-slate-light">
     <div class="text-5xl">
       <!-- <i class="fa-solid fa-circle-notch fa-spin text-blue-light"></i> -->
-      <img class="animate-spin spin" src="./img/loader-blue.svg" alt="Loader Image" width="50" height="50">
+      <div class="animate-spin spin" style="width: 50px; height: 50px;">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <circle class="cls-1" cx="15" cy="15" r="10.5"/>
+            <path class="cls-2" d="M15,4.5c2.9,0,5.52,1.18,7.42,3.08s3.08,4.53,3.08,7.42-1.18,5.52-3.08,7.42-4.53,3.08-7.42,3.08-5.52-1.18-7.42-3.08-3.08-4.53-3.08-7.42,1.18-5.52,3.08-7.42"/>
+          </svg>
+      </div>
     </div>
   </div>
-  <nav class="bg-white border border-gray-700 sticky">
+  <nav class="bg-white dark:bg-slate-light border border-gray-700 dark:border-gray-600 sticky">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-mid hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black dark:text-white dark:hover:text-teal hover:bg-gray-mid dark:hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
             <!--
@@ -61,14 +89,14 @@
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-1 items-center">
-            <a href="index.html" class="text-xl font-extrabold text-blue-light hover:text-gray-mid">SC</a>
+            <a href="index.html" class="text-xl font-extrabold text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-white" aria-current="page">SC</a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "text-blue-light hover:text-gray-mid hover:text-gray-mid" -->
-              <a href="index.html" class="text-blue-light hover:text-gray-mid px-3 py-2 text-sm font-medium">Home</a>
-              <a href="about.html" class="text-blue-light hover:text-gray-mid px-3 py-2 text-sm font-medium">About</a>
-              <a href="mailto:stevie@sc-design.uk" class="text-blue-light hover:text-white hover:border-white hover:bg-gray-mid border border-blue-light rounded-md px-3 py-2 text-sm font-medium">Get In Touch</a>
+              <a href="index.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 px-3 py-2 text-sm font-medium">Home</a>
+              <a href="about.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 px-3 py-2 text-sm font-medium">About</a>
+              <a href="mailto:stevie@sc-design.uk" class="text-blue-light dark:text-teal dark:border-teal hover:text-white dark:hover:border-teal dark:hover:text-white hover:border-white hover:bg-gray-mid dark:hover:bg-teal border border-blue-light rounded-md px-3 py-2 text-sm font-medium transition">Get In Touch</a>
             </div>
           </div>
         </div>
@@ -78,10 +106,10 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
-        <a href="index.html" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
-        <a href="about.html" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
-        <a href="index.html#contact-info-details" class="text-blue-light hover:bg-gray-mid hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium">Get In Touch</a>
+       <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
+        <a href="index.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 block rounded-md text-base px-3 py-2 text-sm font-medium">Home</a>
+        <a href="about.html" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 block rounded-md text-base px-3 py-2 text-sm font-medium">About</a>
+        <a href="#contact-info-details" class="text-blue-light dark:text-teal dark:hover:text-white dark:hover:border-teal hover:bg-gray-mid dark:hover:bg-teal dark:border-teal hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium transition">Get In Touch</a>
       </div>
     </div>
   </nav>  
@@ -92,19 +120,19 @@
         <div class= "max-w-screen-lg my-12 relative">
           <div class="md:flex px-10">
             <div class="project-info md:flex-initial w-100 md:w-3/4">
-              <div class="text-5xl text-blue-light font-bold py-5">Steph Peckham</div>
-              <p class="text-gray-mid text-xl">Self-initiated project - an A3 portrait of Javier Bardem, the spanish actor. Created using a vibrant and flat illustration style. Initially sketched onto paper then transferred to an Ipad and finally I used Procreate to add the spots of colour.
+              <div class="text-5xl text-blue-light font-bold py-5 dark:text-teal">Illustration</div>
+              <p class="text-gray-mid text-xl dark:text-gray-100">Self-initiated project - an A3 portrait of Javier Bardem, the spanish actor. Created using a vibrant and flat illustration style. Initially sketched onto paper then transferred to an Ipad and finally I used Procreate to add the spots of colour.
                 <br><br>
                 Originally created to be printed using a Ricoh Digital Duplicator, so I used the limited colour range available on these machines.</p>
             </div>
-            <div class="md:flex-auto pt-10 w-100 md:w-1/4 md:px-12 md:pt-8">
-              <div class="project-details pb-2 text-blue-light">
+            <div class="md:flex-auto pt-10 w-100 md:w-1/4 md:px-6 md:pt-8">
+              <div class="project-details pb-2 text-blue-light dark:text-teal">
                 <div class="text-4xl font-bold py-2">Year</div>
-                <p class="text-gray-mid text-lg">2021</p>              
+                <p class="text-gray-mid dark:text-gray-100">2021</p>              
               </div>
-              <div class="project-details text-blue-light">
+              <div class="project-details text-blue-light dark:text-teal">
                 <div class="text-4xl font-bold py-2">Work</div>
-                <p class="text-gray-mid text-lg">Illustration, Print Design</p>              
+                <p class="text-gray-mid dark:text-gray-100">Illustration, Print Design</p>              
               </div>
             </div>
           </div>
@@ -115,7 +143,7 @@
       <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/illustration/1.jpg" alt="A3 Print Of Illustration" loading="lazy"/>
     </section>
 
-    <footer class="bg-gray-dark w-full flex p-10">
+    <footer class="bg-gray-dark dark:bg-black w-full flex p-10">
         <div class="flex-1 text-white copyright">© Stevie Cavanagh Design</div>
         <div class="social-media grid grid-cols-2 gap-3 content-center">
           <a class="footer-link opacity-100 hover:opacity-50 z-10" href="https://www.linkedin.com/in/stevie-cavanagh"><img src="./img/linkedin.svg" alt="Linkedin Social Media Logo" width="25" height="25"></a>
