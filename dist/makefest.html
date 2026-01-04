@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stevie Cavanagh | Freelance Graphic Designer based in Liverpool, Merseyside - United Kingdom" />
+    <meta property="og:image" content="img/logo.png"/>
+    <meta name="author" content="Stevie Cavanagh, built using Tailwind CSS and Feather Icons">
+    <link rel="canonical" href="https://sc-design.uk/makefest" />
+    <meta property="og:site_name" content="SC Design"/>
+    <meta property="og:title" content="SC Design - Freelance Graphic Design based in Liverpool, Merseyside | United Kingdom" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Promotional material for Liverpool Makefest - the first maker event in the north-west. Makerfairs are for tech companies and educators to network, exchange ideas and promote themselves to the general public..."/>
+    <meta property="og:url" content="https://sc-design.uk" />
+    <meta property="og:image" content="https://www.sc-design.uk/img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="./output.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/lazyload.min.js"></script>
+    <!-- Font Awesome Icon Library -->
+    <script src="https://kit.fontawesome.com/8848d2d9d9.js" crossorigin="anonymous"></script>
+     <title>Freelance Graphic Design | Liverpool, Merseyside - UK</title>
+    <style>
+      .cls-1 {
+        opacity: .25;
+      }
+
+    .cls-1, .cls-2 {
+      fill: none;
+      stroke: #397dff;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      .cls-1, .cls-2 {
+          fill: none;
+          stroke: #fff !important;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+      }
+    }
+
+    </style>
+</head>
+<body class="font-sans dark:bg-slate-light" style="position: fixed;">
+  <div class="loader w-screen h-screen grid place-content-center justify-center bg-white dark:bg-slate-light">
+    <div class="text-5xl">
+      <!-- <i class="fa-solid fa-circle-notch fa-spin text-blue-light"></i> -->
+      <div class="animate-spin spin" style="width: 50px; height: 50px;">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <circle class="cls-1" cx="15" cy="15" r="10.5"/>
+            <path class="cls-2" d="M15,4.5c2.9,0,5.52,1.18,7.42,3.08s3.08,4.53,3.08,7.42-1.18,5.52-3.08,7.42-4.53,3.08-7.42,3.08-5.52-1.18-7.42-3.08-3.08-4.53-3.08-7.42,1.18-5.52,3.08-7.42"/>
+          </svg>
+      </div>
+    </div>
+  </div>
+  <nav class="bg-white dark:bg-slate-light sticky">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button id="button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-black dark:text-white dark:hover:text-teal hover:bg-gray-mid dark:hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-1 items-center">
+            <a href="https://www.sc-design.uk/" class="text-xl font-extrabold text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-white" aria-current="page">SC</a>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "text-blue-light hover:text-gray-mid hover:text-gray-mid" -->
+              <a href="https://www.sc-design.uk/index" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 px-3 py-2 text-sm font-medium">Home</a>
+              <a href="https://www.sc-design.uk/about" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 px-3 py-2 text-sm font-medium">About</a>
+              <a href="mailto:stevie@sc-design.uk" class="text-blue-light dark:text-teal dark:border-teal hover:text-white dark:hover:border-teal dark:hover:text-white hover:border-white hover:bg-gray-mid dark:hover:bg-teal border border-blue-light rounded-md px-3 py-2 text-sm font-medium transition">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+       <!-- Current: "text-blue-light text-gray-300 hover:bg-gray-mid hover:text-gray-mid" -->
+        <a href="https://www.sc-design.uk/index" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 block rounded-md text-base px-3 py-2 text-sm font-medium">Home</a>
+        <a href="https://www.sc-design.uk/about" class="text-blue-light hover:text-gray-mid dark:text-teal dark:hover:text-gray-300 block rounded-md text-base px-3 py-2 text-sm font-medium">About</a>
+        <a href="#contact-info-details" class="text-blue-light dark:text-teal dark:hover:text-white dark:hover:border-teal hover:bg-gray-mid dark:hover:bg-teal dark:border-teal hover:text-white block rounded-md px-3 py-2 text-base border border-blue-light font-medium transition">Get In Touch</a>
+      </div>
+    </div>
+  </nav> 
+    
+    <section class="banner w-100 h-96 bg-cover bg-center" style="background-image: url('./img/makefest-1.jpg')"></section>
+
+    <section class="single-project-description w-full flex justify-center">
+        <div class= "max-w-screen-lg my-12 relative">
+          <div class="md:flex px-10">
+            <div class="project-info md:flex-initial w-100 md:w-3/4">
+              <div class="text-5xl text-blue-light font-bold py-5 dark:text-teal">Makefest</div>
+              <p class="text-gray-mid text-xl dark:text-gray-100">Promotional material created for Liverpool Makefest 2015 - the first maker event in the north-west of England. Makerfairs are for tech companies and educators to network, exchange ideas and promote themselves to the general public. Print documents e.g. trifold leaflets, A3 posters, A5 flyers and bunting were created to advertise the event. The brand colours and styling were kept consistent across all print materials.</p>
+                <div class="paragraph divider py-5">
+                  <hr width="55px">
+                </div>
+                <a class="text-xl text-gray-mid hover:underline dark:text-gray-100" href="https://liverpoolmakefest.org/">liverpoolmakefest.org</a>
+            </div>
+            <div class="md:flex-auto pt-10 w-100 md:w-1/4 md:px-6 md:pt-8">
+              <div class="project-details pb-2 text-blue-light dark:text-teal">
+                <div class="text-4xl font-bold py-2">Year</div>
+                <p class="text-gray-mid dark:text-gray-100">2015</p>              
+              </div>
+              <div class="project-details pb-2 text-blue-light dark:text-teal">
+                <div class="text-4xl font-bold py-2">Work</div>
+                <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-gray-mid disabled:border-gray-mid dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print Design</button>                                 
+              </div>
+              <div class="project-details text-blue-light dark:text-teal">
+                <div class="text-4xl font-bold py-2">Deliverables</div>
+                <p class="text-gray-mid dark:text-gray-100">1 Trifold Leaflet, 1 A3 Poster, 1 A5 Double-sided Leaflet Design, 1 Bunting Set</p>     
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="project-images py-10 max-w-screen-xl mx-auto">
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-1.jpg" alt="A5 Leaflets" loading="lazy"/>
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-2.jpg" alt="Poster" loading="lazy"/>
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-3.jpg" alt="Trifold Leaflet Cover" loading="lazy"/>
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-4.jpg" alt="Trifold Leaflet Interior" loading="lazy"/>
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-5.jpg" alt="Map" loading="lazy"/>
+      <img class="project-image" width="100%" height="auto" src="./img/grey.gif" data-original="./img/makefest-6.gif" alt="Banner Letters" loading="lazy"/>
+    </section>
+
+    <footer class="bg-gray-dark dark:bg-black w-full flex p-10">
+        <div class="flex-1 text-white copyright">© Stevie Cavanagh Design</div>
+        <div class="social-media grid grid-cols-2 gap-3 content-center">
+          <a class="footer-link opacity-100 hover:opacity-50 z-10" href="https://www.linkedin.com/in/stevie-cavanagh"><img src="./img/linkedin.svg" alt="Linkedin Social Media Logo" width="25" height="25"></a>
+          <a class="footer-link opacity-100 hover:opacity-50 z-10" href="https://dribbble.com/s-cavanagh"><img src="./img/dribbble.svg" alt="Dribbble Social Media Logo" width="25" height="25"></a>
+        </div>
+    </footer>
+    <script src="./js/loader.js"></script>
+    <script src="./js/image-lazyload.js"></script>
+    <script src="./js/navbar-toggle.js"></script> 
+</body>
+</html>

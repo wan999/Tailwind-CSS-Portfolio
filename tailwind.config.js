@@ -8,9 +8,9 @@ module.exports = {
     colors: {
       gray: colors.gray,
       'teal': '#85BEFF',
-      'slate-light': '#2A3247',
-      'slate-mid': '#242B40',
-      'slate-dark': '#242433',
+      'slate-light': '#272A32',
+      'slate-dark': '#212129' ,
+      'slate-darkest': '#15151BFF',
       'dm-gray': '#1D1D21',
       'blue-light': '#3A7DFF',
       'blue-mid': '#2B37A5',
