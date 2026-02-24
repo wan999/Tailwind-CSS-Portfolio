@@ -1,3 +1,3 @@
 # Design Portfolio Website
 
-Website Rebuilt using TailwindCSS with Feather Icons, image-lazyload.js and isotope-layout.js
+Website Rebuilt using TailwindCSS with Feather Icons, gulp, image-lazyload.js and isotope-layout.js
