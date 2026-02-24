@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-#Sitemap Reference
-Sitemap:http://www.sc-design.uk/sitemap.xml
-
