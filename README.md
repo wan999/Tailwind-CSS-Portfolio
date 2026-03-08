@@ -1,8 +1,8 @@
 # Design Portfolio Website
 
-### [Feather Icons]([https://documentation.mjml.io/](https://feathericons.com/))
-### [Isotope]([https://documentation.mjml.io/](https://isotope.metafizzy.co/layout))
-### [Image-lazyload]([https://documentation.mjml.io/](https://lazy.js.org/))
+### [Feather Icons]([https://documentation.mjml.io/](https://feathericons.com/)
+### [Isotope]([https://documentation.mjml.io/](https://isotope.metafizzy.co/layout)
+### [Image-lazyload]([https://documentation.mjml.io/](https://lazy.js.org/)
 ### [Gulp](https://gulpjs.com/)
 
 ### Description
