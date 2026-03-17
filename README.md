@@ -2,7 +2,7 @@
 
 #### Feather Icons: [Feather Icons](https://feathericons.com/)
 #### Isotope: [Isotope](https://isotope.metafizzy.co/layout)
-#### Lazyload: [Image-lazyload](https://lazy.js.org/)
+#### Lazyload: [Image-lazyload](https://github.com/jieyou/lazyload)
 #### Gulp: [Gulp](https://gulpjs.com/)
 
 #### Description:
