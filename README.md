@@ -1,3 +1,9 @@
-Portfolio Rebuilt using Tailwind CSS with Feather Icons
+# Design Portfolio Website
 
-Design Portfolio 
+#### Feather Icons: [Feather Icons](https://feathericons.com/)
+#### Isotope: [Isotope](https://isotope.metafizzy.co/layout)
+#### Lazyload: [Image-lazyload](https://lazy.js.org/)
+#### Gulp: [Gulp](https://gulpjs.com/)
+
+#### Description:
+Website Rebuilt using TailwindCSS with Feather Icons, gulp, image-lazyload.js and isotope-layout.js

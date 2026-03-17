@@ -20,7 +20,7 @@ import imagemin, {mozjpeg, optipng} from 'gulp-imagemin';
         .pipe(gulp.dest('dist/img'))
   }
 
-export default series(copyjs ,copymain, opitimiseimages);
+export default series(copyjs, copymain, opitimiseimages);
 
 
 
