@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/zoom-in-image-on-hover.js"></script>
      <!-- Font Awesome Icon Library -->
     <script src="https://kit.fontawesome.com/8848d2d9d9.js" crossorigin="anonymous"></script>
     <!-- Favicons -->
@@ -28,6 +29,10 @@
     
     <title>Freelance Graphic Design | Liverpool, Merseyside - UK</title>
     <style>
+      .thumb-img {
+        height: 14em;
+      }
+
       .selected {
         --tw-bg-opacity: 1;
         background-color: rgb(71 70 70 / var(--tw-bg-opacity));
@@ -103,8 +108,12 @@
 
     .project {
       transition: background 0.4s, box-shadow 0.4s;
+      z-index: 100;
     }
 
+    .thumb-img {
+      transition: all 0.3s ease-in-out;
+    }
 
     .badge {
       top: -150px;
@@ -140,9 +149,18 @@
           line-height: 1.6rem !important;
         }
 
+        .thumb-img {
+          height: 10em;
+          min-height: 100px;
+        }
+
       }
 
       @media (max-width: 992px) { 
+
+        .thumb-img {
+          height: 18em;
+        }
 
         .text-2xl {
           font-size: 1.1rem !important;
@@ -158,7 +176,12 @@
           width: 1%; 
         }
 
+        .project {
+          margin-bottom: 2em;
+        }
+
       }
+
 
     </style>
 </head>
@@ -267,66 +290,66 @@
                     </div>
                   </a> -->
 
-                  <a href="https://www.sc-design.uk/popstars" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-17.webp" alt="Project Thumbnail: Female Popstars" height="auto" width="100%" style="margin-bottom: 1em;"/>
-                      <div class="pb-5 px-2">
-                        <div class="text-xl">Female Popstars</div>
-                        <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>
-                      </div>                               
+                  <a href="https://www.sc-design.uk/popstars" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-17.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
+                    <div class="pb-5 px-2">
+                      <div class="text-xl">Female Popstars</div>
+                      <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>
+                    </div>                               
                     </a>
                   
-                  <a href="https://www.sc-design.uk/itot" class="overlay hover:opacity-80 transition project print ux logo card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-13.webp" alt="Project Thumbnail: ITOT - Integrated Theatre Of Things" height="auto" width="100%" style="margin-bottom: 1em;"/>
-                      <div class="pb-5 px-2">
-                        <div class="text-xl">Integrated Theatre Of Things</div>
-                        <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
-                        <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Logo Design</button>     
-                        <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>                               
-                      </div>
+                  <a href="https://www.sc-design.uk/itot" class="overlay hover:opacity-80 transition project print ux logo card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-13.webp'); background-size: 100%; min-height: 200px; 100%; margin-bottom: 1em;"></div>
+                    <div class="pb-5 px-2">
+                      <div class="text-xl">Integrated Theatre Of Things</div>
+                      <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
+                      <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Logo Design</button>     
+                      <button type="button" class="border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>                               
+                    </div>
                     </a>
 
-                  <a href="https://www.sc-design.uk/steph-peckham" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-1.webp" alt="Project Thumbnail: ITOT - Integrated Theatre Of Things Campaign" height="auto" width="100%" style="margin-bottom: 1em;"/>
-                     <div class="pb-5 px-2">
+                  <a href="https://www.sc-design.uk/steph-peckham" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-1.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
+                    <div class="pb-5 px-2">
                       <div class="text-xl">Steph Peckham</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Logo Design</button>     
                     </div>
                   </a>
 
-                  <a href="https://www.sc-design.uk/jav-esg" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-16.webp" alt="Project Thumbnail: ITOT - Integrated Theatre Of Things Website" height="auto" width="100%" style="margin-bottom: 1em;"/>
-                      <div class="pb-5 px-2">
-                        <div class="text-xl">JAV Medical Systems</div>
-                        <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
-                    </div>
+                  <a href="https://www.sc-design.uk/jav-esg" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-16.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
+                    <div class="pb-5 px-2">
+                      <div class="text-xl">JAV Medical Systems</div>
+                      <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
+                  </div>
                   </a>
 
-                  <a href="https://www.sc-design.uk/fact-liverpool" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-6.webp" alt="Project Thumbnail: FACT Liverpool Certificate" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/fact-liverpool" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-6.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">   
                       <div class="text-xl">FACT Liverpool</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>     
                     </div>
                   </a>
 
-                  <a href="https://www.sc-design.uk/surgical-events" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-15.webp" alt="Project Thumbnail: Surgical Events Website" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/surgical-events" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-15.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">
                       <div class="text-xl">Surgical Events</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
                     </div>
                   </a>
 
-                  <a href="https://www.sc-design.uk/presentation" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-8.webp" alt="Project Thumbnail: BLU | COM6 Presentation" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/presentation" class="overlay hover:opacity-80 transition project ux card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-8.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">
                       <div class="text-xl">BLU | COM6 Presentation</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
                     </div>
                   </a>
 
-                  <a href="https://www.sc-design.uk/beauty" class="overlay hover:opacity-80 transition project ux logo card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-9.webp" alt="Project Thumbnail: Beauty By Cath Logo" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/beauty" class="overlay hover:opacity-80 transition project ux logo card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-9.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">
                       <div class="text-xl">Beauty By Cath</div>
                         <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Logo Design</button>     
@@ -334,33 +357,33 @@
                     </div>  
                   </a>
 
-                  <a href="https://www.sc-design.uk/illustration" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-12.webp" alt="Project Thumbnail: Riso Illustration" height="auto" width="100%" style="margin-bottom: 1em;"/>
-                    <div class="pb-5 px-2"> 
+                  <a href="https://www.sc-design.uk/illustration" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-12.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
+                    <div class="pb-5 px-2">  
                       <div class="text-xl">Risograph Illustration</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>     
                     </div> 
                   </a>
               
 
-                  <a href="https://www.sc-design.uk/blood-brothers" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img src="./img/thumbnails-11.webp" alt="Project Thumbnail: Blood Brothers Exhibition" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/blood-brothers" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-11.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">
                       <div class="text-xl">Blood Brothers</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Print</button>     
                       </div>
                   </a>  
                   
-                  <a href="https://www.sc-design.uk/lady-lever" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-3.webp" alt="Project Thumbnail: Lady Lever Interactive Screens" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/lady-lever" class="overlay hover:opacity-80 transition project print card" style="border-radius: 0px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-3.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">  
                       <div class="text-xl">Lady Lever</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
                       </div>
                   </a>
                   
-                  <a href="https://www.sc-design.uk/makefest" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; border: 1px solid; text-align: left; overflow: hidden;">
-                    <img class="z-0" src="./img/thumbnails-2.webp" alt="Project Thumbnail: Makefest Print Materials" height="auto" width="100%" style="margin-bottom: 1em;"/>
+                  <a href="https://www.sc-design.uk/makefest" class="overlay hover:opacity-80 transition project print card" style="border-radius: 5px; text-align: left; overflow: hidden;">
+                    <div class="thumb-img" style="background-position: center; background-image: url('./img/thumbnails-2.webp'); background-size: 100%; min-height: 200px; width: 100%; margin-bottom: 1em;"></div>
                     <div class="pb-5 px-2">
                       <div class="text-xl">Makefest</div>
                       <button type="button" class="py-2 border rounded px-3 py-1 mt-2 disabled:text-white disabled:border-white dark:disabled:text-white disabled:shadow-none dark:disabled:border-white dark:disabled:bg-slate-light text-sm" disabled>Digital</button>     
