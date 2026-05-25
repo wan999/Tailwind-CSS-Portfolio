@@ -544,40 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1020,6 +986,14 @@ video {
   padding-top: 0.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1209,6 +1183,10 @@ nav {
   opacity: 0.5;
 }
 
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
 .hover\:opacity-90:hover {
   opacity: 0.9;
 }
@@ -1238,9 +1216,29 @@ nav {
   border-color: rgb(71 70 70 / var(--tw-border-opacity));
 }
 
+.disabled\:border-blue-light:disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(58 125 255 / var(--tw-border-opacity));
+}
+
+.disabled\:border-white:disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .disabled\:text-gray-mid:disabled {
   --tw-text-opacity: 1;
   color: rgb(71 70 70 / var(--tw-text-opacity));
+}
+
+.disabled\:text-blue-light:disabled {
+  --tw-text-opacity: 1;
+  color: rgb(58 125 255 / var(--tw-text-opacity));
+}
+
+.disabled\:text-white:disabled {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .disabled\:shadow-none:disabled {
@@ -1463,11 +1461,6 @@ nav {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
-  .dark\:disabled\:border-teal:disabled {
-    --tw-border-opacity: 1;
-    border-color: rgb(133 190 255 / var(--tw-border-opacity));
-  }
-
   .dark\:disabled\:border-white:disabled {
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1481,11 +1474,6 @@ nav {
   .dark\:disabled\:text-white:disabled {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:disabled\:text-teal:disabled {
-    --tw-text-opacity: 1;
-    color: rgb(133 190 255 / var(--tw-text-opacity));
   }
 }
 
